@@ -2,32 +2,31 @@ import 'package:flutter/material.dart';
 import 'Header.dart';
 import 'InputWrapper.dart';
 
-class LoginPage extends StatelessWidget{
-  @override 
-  Widget build (BuildContext context) {
-
+class LoginPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
         width: double.infinity,
         decoration: BoxDecoration(
-          gradient: LinearGradient(begin: Alignment.topCenter,colors: [
-            Colors.cyan[500],
-            Colors.cyan[300],
-            Colors.cyan[400]
-          ]),
+          gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              colors: [Colors.pink[500], Colors.pink[300], Colors.pink[400]]),
         ),
         child: Column(
           children: <Widget>[
-            SizedBox(height: 80,),
+            SizedBox(
+              height: 50,
+            ),
             Header(),
-            Expanded(child: Container(
+            Expanded(
+                child: Container(
               decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(60),
-                  topRight:Radius.circular(60),
-                )
-              ),
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(35),
+                    topRight: Radius.circular(35),
+                  )),
               child: InputWrapper(),
             ))
           ],

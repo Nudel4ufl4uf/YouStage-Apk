@@ -43,11 +43,10 @@ class HomePage extends StatelessWidget {
             backgroundColor: Colors.pink[400],
           ),
         ],
-        onTab: (index){
+        onTap: (index){
           setState((){
             currentIndex = index;
           });
-
         }
       ),
     );
@@ -67,3 +66,4 @@ class _State extends State<MyApp> {
       count++;
     });
   }
+}

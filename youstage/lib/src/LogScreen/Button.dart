@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'src/HomeScreen/HomePage.dart';
+
 
 class Button extends StatelessWidget {
   Widget build(BuildContext context) {
@@ -16,12 +16,12 @@ class Button extends StatelessWidget {
             style: TextStyle(
                 color: Colors.white, fontSize: 15, fontWeight: FontWeight.bold),
           ),
-          onPressed: (){ 
+          /*onPressed: (){ 
             Navigator.push(
               context, 
-              MaterialPageRoute(builder: (context) => HomePage)
+              MaterialPageRoute(builder: (context) => HomePage())
             )
-          }
+          }*/
         ));
   }
 }

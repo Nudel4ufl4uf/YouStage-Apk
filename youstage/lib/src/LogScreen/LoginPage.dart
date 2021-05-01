@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'Header.dart';
 import 'InputWrapper.dart';
 
-class LoginPage extends StatelessWidget {
+class _LoginPage extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,4 +34,31 @@ class LoginPage extends StatelessWidget {
       ),
     );
   }
+}
+
+class Button extends StatelessWidget{
+  Widget build (BuildContext context){
+    return Container( 
+      margin: EdgeInsets.all(50),
+      height: 50,
+      decoration: BoxDecoration(
+          color: Colors.grey,
+          borderRadius: BorderRadius.circular(10),
+        ),
+      child: FlatButton(  
+                child: Text('LogIn', style: TextStyle(fontSize: 20.0),),  
+                color: Colors.blueAccent,  
+                textColor: Colors.white,  
+                onPressed: () {
+                  Navigator.pushNamed(context, '/home');
+                },  
+              ),  
+    ); 
+  }
+}
+
+class LoginPage extends StatefulWidget {
+  
+  @override
+  _LoginPage createState() => _LoginPage();
 }

@@ -23,6 +23,8 @@ class Header extends StatelessWidget {
               Center(
                   child: Text("Login",
                       style: TextStyle(color: Colors.white, fontSize: 25)))
-            ]));
+            ]
+        )
+      );
   }
 }

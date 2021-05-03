@@ -24,9 +24,9 @@ After the Project broke down due to semester ending in mid 2020 it was my idea t
 
 ## Authors
 
-Philo Klemenz
-https://github.com/Nudel4ufl4uf
-philoklemenz@gmail.com
+<p> Philo Klemenz </p>
+<p> https://github.com/Nudel4ufl4uf </p>
+<p> philoklemenz@gmail.com </p>
 
 ## Version History
 

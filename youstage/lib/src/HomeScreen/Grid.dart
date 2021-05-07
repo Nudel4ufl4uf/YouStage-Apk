@@ -23,60 +23,79 @@ class Grid extends StatelessWidget {
                     borderRadius: radius,
                     color: Colors.pink[200],
                     image: DecorationImage(
-                      image: AssetImage(
-                      'images/bausa.jpg'),
+                      image: AssetImage('assets/images/bausa.jpg'),
                       fit: BoxFit.fill,
                     ),
-                    shape: BoxShape.rectangle,
-              )),
-              Container(
-                  padding: const EdgeInsets.all(8),
-                  child: const Text('Heed not the rabble'),
-                  decoration: BoxDecoration(
-                    borderRadius: radius,
-                    color: Colors.pink[200],
                   )),
               Container(
                   padding: const EdgeInsets.all(8),
-                  child: const Text('Sound of screams but the'),
                   decoration: BoxDecoration(
                     borderRadius: radius,
                     color: Colors.pink[200],
+                    image: DecorationImage(
+                      image: AssetImage('assets/images/alan_walker.jpg'),
+                      fit: BoxFit.fill,
+                    ),
                   )),
               Container(
                   padding: const EdgeInsets.all(8),
-                  child: const Text('Who scream'),
                   decoration: BoxDecoration(
                     borderRadius: radius,
                     color: Colors.pink[200],
+                    image: DecorationImage(
+                      image: AssetImage('assets/images/lena_m_l.jpg'),
+                      fit: BoxFit.fill,
+                    ),
                   )),
               Container(
                   padding: const EdgeInsets.all(8),
-                  child: const Text('Revolution is coming...'),
                   decoration: BoxDecoration(
                     borderRadius: radius,
                     color: Colors.pink[200],
+                    image: DecorationImage(
+                      image: AssetImage('assets/images/apache207.jpg'),
+                      fit: BoxFit.fill,
+                    ),
                   )),
               Container(
                   padding: const EdgeInsets.all(8),
-                  child: const Text('Revolution, they...'),
                   decoration: BoxDecoration(
                     borderRadius: radius,
                     color: Colors.pink[200],
+                    image: DecorationImage(
+                      image: AssetImage('assets/images/felix_lobrecht.jpg'),
+                      fit: BoxFit.fill,
+                    ),
                   )),
               Container(
                   padding: const EdgeInsets.all(8),
-                  child: const Text('Revolution is coming...'),
                   decoration: BoxDecoration(
                     borderRadius: radius,
                     color: Colors.pink[200],
+                    image: DecorationImage(
+                      image: AssetImage('assets/images/max_giesinger.jpg'),
+                      fit: BoxFit.fill,
+                    ),
                   )),
               Container(
                   padding: const EdgeInsets.all(8),
-                  child: const Text('Revolution, they...'),
                   decoration: BoxDecoration(
                     borderRadius: radius,
                     color: Colors.pink[200],
+                    image: DecorationImage(
+                      image: AssetImage('assets/images/steve_aoki.jpg'),
+                      fit: BoxFit.fill,
+                    ),
+                  )),
+              Container(
+                  padding: const EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                    borderRadius: radius,
+                    color: Colors.pink[200],
+                    image: DecorationImage(
+                      image: AssetImage('assets/images/paul_panzer.jpg'),
+                      fit: BoxFit.fill,
+                    ),
                   )),
             ],
           ),

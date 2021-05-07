@@ -15,7 +15,13 @@ class HomeHeader extends StatelessWidget {
                 fontSize: 50,
                 fontWeight: FontWeight.bold,
               )),
-        ), 
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            image: DecorationImage(
+              image: AssetImage('assets/images/max_mustermann.jpg'),
+            ),
+          ),
+        ),
       ),
     ]);
   }

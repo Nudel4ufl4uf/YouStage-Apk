@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'Header.dart';
 import 'InputWrapper.dart';
 
@@ -21,7 +22,7 @@ class _LoginPage extends State<LoginPage> {
             Header(),
             Expanded(
                 child: Container(
-              decoration: BoxDecoration(
+                decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(35),
@@ -33,27 +34,6 @@ class _LoginPage extends State<LoginPage> {
         ),
       ),
     );
-  }
-}
-
-class Button extends StatelessWidget{
-  Widget build (BuildContext context){
-    return Container( 
-      margin: EdgeInsets.all(50),
-      height: 50,
-      decoration: BoxDecoration(
-          color: Colors.grey,
-          borderRadius: BorderRadius.circular(10),
-        ),
-      child: FlatButton(  
-                child: Text('LogIn', style: TextStyle(fontSize: 20.0),),  
-                color: Colors.blueAccent,  
-                textColor: Colors.white,  
-                onPressed: () {
-                  Navigator.pushNamed(context, '/home');
-                },  
-              ),  
-    ); 
   }
 }
 

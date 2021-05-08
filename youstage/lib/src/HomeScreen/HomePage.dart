@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import './Grid.dart';
-
+import 'HomeBar.dart';
 import 'HomeHeader.dart';
 
 class HomePage extends StatelessWidget {
@@ -23,9 +23,9 @@ class HomePage extends StatelessWidget {
             ),
             HomeHeader(),
             Expanded(
-                child: Container(
-                  child: Grid(),
-                  decoration: BoxDecoration(
+              child: Container(
+              child: Grid(),
+              decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(35),
@@ -35,7 +35,12 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
-      
+      bottomNavigationBar: ClipRRect(
+        borderRadius: BorderRadius.only(
+          topLeft:Radius.circular(35),
+          topRight: Radius.circular(35),), 
+          child: HomeBar(),
+      ),
     );
   }
 }

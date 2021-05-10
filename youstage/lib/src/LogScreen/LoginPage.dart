@@ -25,8 +25,8 @@ class _LoginPage extends State<LoginPage> {
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(35),
-                    topRight: Radius.circular(35),
+                    topLeft: Radius.circular(30),
+                    topRight: Radius.circular(30),
                   )),
               child: InputWrapper(),
             ))

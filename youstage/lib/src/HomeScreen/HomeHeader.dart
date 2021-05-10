@@ -18,20 +18,12 @@ class HomeHeader extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   )),
             ),
-            Expanded(
-              child: FittedBox(
-                fit: BoxFit.contain,
-                child: Image.asset('assets/images/max_mustermann.jpg',)
-                /*child: Container(
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/max_mustermann.jpg'),
-                    ),
-                  ),
-                ),*/
+            Container(
+              child: CircleAvatar(
+                radius: 25,
+                backgroundImage: AssetImage('assets/images/max_mustermann.jpg'),
               ),
-            )
+            ),
           ]),
         ),
       ),

@@ -41,27 +41,3 @@ class HomeBar extends StatelessWidget {
     );
   }
 }
-/*
-AppBar(
-      actions: [
-        TextButton(
-            onPressed: () {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => null));
-            },
-            child: Text('Suche')),
-        TextButton(
-            onPressed: () {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => null));
-            },
-            child: Text('Spotlight')),
-        TextButton(
-            onPressed: () {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => null));
-            },
-            child: Text('Suche')),
-      ],
-    );
-*/

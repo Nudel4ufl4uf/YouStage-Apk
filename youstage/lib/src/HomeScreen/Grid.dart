@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './GridTileBuild.dart';
 
 class Grid extends StatelessWidget {
   Grid();
@@ -9,112 +10,31 @@ class Grid extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomScrollView(
       primary: false,
-      
       slivers: <Widget>[
         SliverPadding(
-          padding: const EdgeInsets.all(35),
+          padding: const EdgeInsets.all(30),
           sliver: SliverGrid.count(
             crossAxisSpacing: 15,
             mainAxisSpacing: 15,
             crossAxisCount: 2,
+            childAspectRatio: 3 / 4,
             children: <Widget>[
-              Container(
-                child: Scaffold(
-                  backgroundColor: Colors.white,
-                  body: Container(
-                    height: 20,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.all(Radius.circular(35)),
-                    ),
-                  ),
-                ),
-                padding: const EdgeInsets.all(8),
-                decoration: BoxDecoration(
-                  borderRadius: radius,
-                  color: Colors.pink[200],
-                  image: DecorationImage(
-                    image: AssetImage('assets/images/bausa.jpg'),
-                    fit: BoxFit.fill,
-                  ),
-                ),
-                constraints: BoxConstraints(
-                  minWidth: 70,
-                  minHeight: 70,
-                  maxWidth: 150,
-                  maxHeight: 150,
-                ),
-              ),
-              Container(
-                  padding: const EdgeInsets.all(8),
-                  decoration: BoxDecoration(
-                    borderRadius: radius,
-                    color: Colors.pink[200],
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/alan_walker.jpg'),
-                      fit: BoxFit.fill,
-                    ),
-                  )),
-              Container(
-                  padding: const EdgeInsets.all(8),
-                  decoration: BoxDecoration(
-                    borderRadius: radius,
-                    color: Colors.pink[200],
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/lena_m_l.jpg'),
-                      fit: BoxFit.fill,
-                    ),
-                  )),
-              Container(
-                  padding: const EdgeInsets.all(8),
-                  decoration: BoxDecoration(
-                    borderRadius: radius,
-                    color: Colors.pink[200],
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/apache207.jpg'),
-                      fit: BoxFit.fill,
-                    ),
-                  )),
-              Container(
-                  padding: const EdgeInsets.all(8),
-                  decoration: BoxDecoration(
-                    borderRadius: radius,
-                    color: Colors.pink[200],
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/felix_lobrecht.jpg'),
-                      fit: BoxFit.fill,
-                    ),
-                  )),
-              Container(
-                  padding: const EdgeInsets.all(8),
-                  decoration: BoxDecoration(
-                    borderRadius: radius,
-                    color: Colors.pink[200],
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/max_giesinger.jpg'),
-                      fit: BoxFit.fill,
-                    ),
-                  )),
-              Container(
-                  padding: const EdgeInsets.all(8),
-                  decoration: BoxDecoration(
-                    borderRadius: radius,
-                    color: Colors.pink[200],
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/steve_aoki.jpg'),
-                      fit: BoxFit.fill,
-                    ),
-                  )),
-              Container(
-                  padding: const EdgeInsets.all(8),
-                  decoration: BoxDecoration(
-                    borderRadius: radius,
-                    color: Colors.pink[200],
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/paul_panzer.jpg'),
-                      fit: BoxFit.fill,
-                    ),
-                  )),
+              GridTileBuild(
+                  'assets/images/bausa.jpg', 'Bausa', 'Konzert', true),
+              GridTileBuild(
+                  'assets/images/alan_walker.jpg', 'Alan Walker', 'Festival', false),
+              GridTileBuild(
+                  'assets/images/lena_m_l.jpg', 'Lena Meyer-Landrut ', 'Konzert',false),
+              GridTileBuild(
+                  'assets/images/apache207.jpg', 'Apache 207', 'Konzert',true),
+              GridTileBuild(
+                  'assets/images/felix_lobrecht.jpg', 'Felix Lobrecht', 'StandUp',true),
+              GridTileBuild(
+                  'assets/images/max_giesinger.jpg', 'Max Giesinger', 'Konzert',true),
+              GridTileBuild(
+                  'assets/images/steve_aoki.jpg', 'Steve Aoki', 'Festival',false),
+              GridTileBuild(
+                  'assets/images/paul_panzer.jpg', 'Paul Panzer', 'StandUp',true),
             ],
           ),
         ),

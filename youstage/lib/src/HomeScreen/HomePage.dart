@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 
-import 'Header.dart';
-import 'InputWrapper.dart';
+import './Grid.dart';
+import 'HomeBar.dart';
+import 'HomeHeader.dart';
 
-class _LoginPage extends State<LoginPage> {
+class HomePage extends StatelessWidget {
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,26 +21,26 @@ class _LoginPage extends State<LoginPage> {
             SizedBox(
               height: 50,
             ),
-            Header(),
+            HomeHeader(),
             Expanded(
-                child: Container(
-                decoration: BoxDecoration(
+              child: Container(
+              child: Grid(),
+              decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(30),
                     topRight: Radius.circular(30),
                   )),
-              child: InputWrapper(),
             ))
           ],
         ),
       ),
+      bottomNavigationBar: ClipRRect(
+        borderRadius: BorderRadius.only(
+          topLeft:Radius.circular(35),
+          topRight: Radius.circular(35),), 
+          child: HomeBar(),
+      ),
     );
   }
-}
-
-class LoginPage extends StatefulWidget {
-  
-  @override
-  _LoginPage createState() => _LoginPage();
 }

@@ -40,7 +40,7 @@ class CategoriePage extends StatelessWidget {
           topLeft: Radius.circular(35),
           topRight: Radius.circular(35),
         ),
-        child: BottomNavBar(),
+        child: BottomNavBar(2),
       ),
     );
   }

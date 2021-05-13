@@ -16,7 +16,7 @@ class CategorieGridBuilder extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.all(Radius.circular(35)),
+        borderRadius: BorderRadius.all(Radius.circular(30)),
         gradient: LinearGradient(begin: Alignment.centerLeft, colors: [
           color1,
           color2,
@@ -25,16 +25,28 @@ class CategorieGridBuilder extends StatelessWidget {
       ),
       child: Container(
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
-            Image(image: AssetImage(myicon),height: 10,width: 10,),
-            Text(
-              mytext,
-              style: TextStyle(
-                  fontSize: 40,
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold),
-            )
+            Container(
+              margin: new EdgeInsets.only(left: 20,right: 20),
+              child: Image(
+                image: AssetImage(myicon),
+                height: 55,
+                width: 55,
+                alignment: Alignment.centerLeft,
+              ),
+            ),
+            Container(
+              margin: new EdgeInsets.only(right: 20),
+              child: Text(
+                mytext,
+                style: TextStyle(
+                    fontSize: 40,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold),
+                   
+              ),
+            ),
           ],
         ),
       ),

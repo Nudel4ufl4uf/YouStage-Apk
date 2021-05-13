@@ -1,0 +1,43 @@
+import 'package:flutter/material.dart';
+
+class CategorieGridBuilder extends StatelessWidget {
+  final String myicon;
+  final String mytext;
+  final Color color1;
+  final Color color2;
+  final Color color3;
+
+  CategorieGridBuilder(
+      this.myicon, this.mytext, this.color1, this.color2, this.color3);
+
+  final BorderRadius radius = BorderRadius.all(Radius.circular(35));
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.all(Radius.circular(35)),
+        gradient: LinearGradient(begin: Alignment.centerLeft, colors: [
+          color1,
+          color2,
+          color3,
+        ]),
+      ),
+      child: Container(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: <Widget>[
+            Image(image: AssetImage(myicon),height: 10,width: 10,),
+            Text(
+              mytext,
+              style: TextStyle(
+                  fontSize: 40,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold),
+            )
+          ],
+        ),
+      ),
+    );
+  }
+}

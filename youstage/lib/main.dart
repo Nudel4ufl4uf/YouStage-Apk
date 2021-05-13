@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:youstage/src/Categories/CategoriePage.dart';
 
 import 'package:youstage/src/HomeScreen/HomePage.dart';
 import 'src/LogScreen/LoginPage.dart';
@@ -15,16 +16,22 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: { 
         '/logIn': (context) => LoginPage(),
-        '/home':(context) => HomePage(),
+        '/home': (context) => HomePage(),
+        '/Categorie': (context) => CategoriePage(),
       },
     );
   }
 }
-
-class HomeRoute extends StatelessWidget {
+/*class HomeRoute extends StatelessWidget {
   @override 
   Widget build (BuildContext context){
     return HomePage();
   }
 }
 
+class CategorieRoute extends StatelessWidget {
+  @override 
+  Widget build (BuildContext context){
+    return CategoriePage();
+}
+  }*/

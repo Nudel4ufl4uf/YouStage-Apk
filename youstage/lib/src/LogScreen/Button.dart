@@ -23,9 +23,9 @@ class Button extends StatelessWidget{
                   backgroundColor: MaterialStateProperty.all<Color>(Colors.pink[600]),
               ),  
                 onPressed: () {
-                  Navigator.push(
+                  Navigator.pushNamed(
                     context,
-                    MaterialPageRoute(builder: (context) => HomeRoute()),
+                    '/home',
                     );
                 },  
               ),  

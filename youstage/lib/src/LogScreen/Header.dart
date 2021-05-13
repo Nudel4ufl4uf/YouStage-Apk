@@ -8,23 +8,16 @@ class Header extends StatelessWidget {
         child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              Center(
-                child: Text(
-                  "Youstage",
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 80,
-                      fontWeight: FontWeight.bold),
-                ),
+              Text(
+                "The \nStage \nIs Yours.",
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 80,
+                    fontWeight: FontWeight.bold),
               ),
               SizedBox(
                 height: 10,
               ),
-              Center(
-                  child: Text("The Stage Is Yours!",
-                      style: TextStyle(color: Colors.white, fontSize: 20)))
-            ]
-        )
-      );
+            ]));
   }
 }

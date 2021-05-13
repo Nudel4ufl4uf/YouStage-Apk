@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:youstage/src/HomeScreen/BottomNavBar.dart';
 
-import './Grid.dart';
-import 'BottomNavBar.dart';
-import 'HomeHeader.dart';
+import 'CategorieGrid.dart';
+import 'CategorieHeader.dart';
 
-class HomePage extends StatelessWidget {
+class CategoriePage extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -21,10 +21,10 @@ class HomePage extends StatelessWidget {
             SizedBox(
               height: 25,
             ),
-            HomeHeader(),
+            CategorieHeader(),
             Expanded(
                 child: Container(
-              child: Grid(),
+              child: CategorieGrid(),
               decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
@@ -35,7 +35,13 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
-      bottomNavigationBar: BottomNavBar(),
+      bottomNavigationBar: ClipRRect(
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(35),
+          topRight: Radius.circular(35),
+        ),
+        child: BottomNavBar(),
+      ),
     );
   }
 }

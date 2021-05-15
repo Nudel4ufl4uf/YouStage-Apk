@@ -13,8 +13,9 @@ class HomePage extends StatelessWidget {
         width: double.infinity,
         decoration: BoxDecoration(
           gradient: LinearGradient(
-              begin: Alignment.topCenter,
-              colors: [Colors.pink[500], Colors.pink[300], Colors.pink[400]]),
+            begin: Alignment.topCenter,
+            colors: [Colors.pink[500], Colors.pink[300], Colors.pink[400]],
+          ),
         ),
         child: Column(
           children: <Widget>[
@@ -23,15 +24,17 @@ class HomePage extends StatelessWidget {
             ),
             HomeHeader(),
             Expanded(
-                child: Container(
-              child: Grid(),
-              decoration: BoxDecoration(
+              child: Container(
+                child: Grid(),
+                decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(30),
                     topRight: Radius.circular(30),
-                  )),
-            ))
+                  ),
+                ),
+              ),
+            )
           ],
         ),
       ),

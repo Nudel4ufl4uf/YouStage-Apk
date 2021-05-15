@@ -25,7 +25,7 @@ class CategorieGrid extends StatelessWidget {
                   Colors.pink[200]),
               CategorieGridBuilder(
                   'assets/icons/music-note.png',
-                  "Konzerte",
+                  "Wohnzimmer\nKonzerte",
                   Colors.blue[800],
                   Colors.blue[500],
                   Colors.blue[200]),

@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:youstage/src/Categories/CategoriePage.dart';
 
 import 'package:youstage/src/HomeScreen/HomePage.dart';
+import 'package:youstage/src/Profile/ProfilePage.dart';
 import 'src/LogScreen/LoginPage.dart';
-import 'src/LogScreen/Button.dart';
+
 
 void main() => runApp(MyApp());
 
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
         '/logIn': (context) => LoginPage(),
         '/home': (context) => HomePage(),
         '/Categorie': (context) => CategoriePage(),
+        '/Profile': (context) => ProfilePage(),
       },
     );
   }

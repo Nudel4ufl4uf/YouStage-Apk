@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:auto_size_text/auto_size_text.dart';
 
 class GridTileBuild extends StatelessWidget {
   final String name;
   final String image;
   final String categorie;
   final bool live;
-  final String viewers;
+  final int viewers;
 
   GridTileBuild(this.image, @required this.name, @required this.categorie,
       @required this.live, this.viewers);
@@ -42,17 +43,32 @@ class GridTileBuild extends StatelessWidget {
             ]),
           ),
         ),
-        Text(
+        AutoSizeText(
           name,
+          maxLines: 2,
           style: TextStyle(
             color: Colors.pink[600],
             fontSize: 20,
             fontWeight: FontWeight.bold,
           ),
         ),
-        Text(categorie),
+        Text(
+          categorie,
+          style: TextStyle(
+            color: Colors.grey[800],
+            fontSize: 13,
+          ),
+        ),
         if (live && (viewers != null && viewers != ""))
-          Container(child: Text(viewers + " Zuschauer")),
+          Container(
+            child: Text(
+              "$viewers Zuschauer",
+              style: TextStyle(
+                color: Colors.grey[800],
+                fontSize: 13,
+              ),
+            ),
+          ),
       ],
     );
   }

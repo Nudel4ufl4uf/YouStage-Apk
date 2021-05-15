@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:auto_size_text/auto_size_text.dart';
 
 class CategorieGridBuilder extends StatelessWidget {
   final String myicon;
@@ -28,7 +29,7 @@ class CategorieGridBuilder extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
             Container(
-              margin: new EdgeInsets.only(left: 20,right: 20),
+              margin: new EdgeInsets.only(left: 20, right: 20),
               child: Image(
                 image: AssetImage(myicon),
                 height: 55,
@@ -36,15 +37,13 @@ class CategorieGridBuilder extends StatelessWidget {
                 alignment: Alignment.centerLeft,
               ),
             ),
-            Container(
-              margin: new EdgeInsets.only(right: 20),
-              child: Text(
-                mytext,
-                style: TextStyle(
-                    fontSize: 40,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold),
-                   
+            AutoSizeText(
+              mytext,
+              maxLines: 2,
+              style: TextStyle(
+                fontSize: 37,
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
               ),
             ),
           ],

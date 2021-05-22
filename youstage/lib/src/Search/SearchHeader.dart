@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class HomeHeader extends StatelessWidget {
+class SearchHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -13,7 +13,7 @@ class HomeHeader extends StatelessWidget {
               children: <Widget>[
                 Expanded(
                   child: Text(
-                    'YouStage',
+                    'Search',
                     textAlign: TextAlign.left,
                     style: TextStyle(
                       color: Colors.white,

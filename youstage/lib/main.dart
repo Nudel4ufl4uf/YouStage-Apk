@@ -3,6 +3,7 @@ import 'package:youstage/src/Categories/CategoriePage.dart';
 
 import 'package:youstage/src/HomeScreen/HomePage.dart';
 import 'package:youstage/src/Profile/ProfilePage.dart';
+import 'package:youstage/src/Search/SearchPage.dart';
 import 'src/LogScreen/LoginPage.dart';
 
 
@@ -20,6 +21,7 @@ class MyApp extends StatelessWidget {
         '/home': (context) => HomePage(),
         '/Categorie': (context) => CategoriePage(),
         '/Profile': (context) => ProfilePage(),
+        '/Search': (context) => SearchPage(),
       },
     );
   }

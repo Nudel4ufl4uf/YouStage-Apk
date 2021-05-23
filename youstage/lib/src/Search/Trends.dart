@@ -7,17 +7,36 @@ class Trends extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: <Widget>[
-        for (var i in input)
-          Container(
-            color: Colors.white,
-            child: Text(
-              "#" + i,
-              textAlign: TextAlign.left,
+    return Container(
+      padding: EdgeInsets.all(20),
+      color: Colors.white,
+      alignment: Alignment.centerLeft,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Text(
+            "Trends",
+            textAlign: TextAlign.left,
+            style: TextStyle(
+              fontSize: 30,
+              fontWeight: FontWeight.bold,
+              
             ),
           ),
-      ],
+          for (var i in input)
+            Container(
+              padding: EdgeInsets.only(top: 10),
+              color: Colors.white,
+              child: Text(
+                "#" + i ,
+                textAlign: TextAlign.left,
+                style: TextStyle(
+                  fontSize: 15,
+                ),
+              ),
+            ),
+        ],
+      ),
     );
   }
 }

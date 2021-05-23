@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:youstage/src/HomeScreen/BottomNavBar.dart';
+import 'package:youstage/src/AppWideTools/BottomNavBar.dart';
+import 'package:youstage/src/AppWideTools/Header.dart';
 
 import 'CategorieGrid.dart';
 import 'CategorieHeader.dart';
@@ -9,6 +10,7 @@ class CategoriePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Container(
         width: double.infinity,
         decoration: BoxDecoration(
@@ -21,7 +23,7 @@ class CategoriePage extends StatelessWidget {
             SizedBox(
               height: 25,
             ),
-            CategorieHeader(),
+            Header("Kategorien"),
             Expanded(
                 child: Container(
               child: CategorieGrid(),
@@ -35,13 +37,7 @@ class CategoriePage extends StatelessWidget {
           ],
         ),
       ),
-      bottomNavigationBar: ClipRRect(
-        borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(35),
-          topRight: Radius.circular(35),
-        ),
-        child: BottomNavBar(2),
-      ),
+      bottomNavigationBar: BottomNavBar(2),
     );
   }
 }

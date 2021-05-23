@@ -19,7 +19,7 @@ class InfoBuilder extends StatelessWidget {
     return Scaffold(
       body: Container(
         width: double.infinity,
-        padding: EdgeInsets.only(top: 27),
+        padding: EdgeInsets.only(top: 50),
         decoration: BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,

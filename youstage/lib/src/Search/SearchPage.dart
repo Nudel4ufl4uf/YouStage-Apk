@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:youstage/src/AppWideTools/BottomNavBar.dart';
+import 'package:youstage/src/AppWideTools/Header.dart';
 
-import 'SearchHeader.dart';
 import 'Searchbar.dart';
 import 'Trends.dart';
 
@@ -10,6 +11,7 @@ class SearchPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Container(
         width: double.infinity,
         decoration: BoxDecoration(
@@ -22,20 +24,31 @@ class SearchPage extends StatelessWidget {
             SizedBox(
               height: 25,
             ),
-            SearchHeader(),
-            Expanded(
-              child: Container(
-                child: Searchbar(),
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(30),
-                    topRight: Radius.circular(30),
-                  ),
+            Header("Suche"),
+            Container(
+              child: Searchbar(),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(30),
+                  topRight: Radius.circular(30),
                 ),
               ),
             ),
-            Trends(["Konzert","Corona","Rap","HipHop",]),
+            Expanded(
+              child: Trends([
+                "Konzert",
+                "Corona",
+                "Rap",
+                "HipHop",
+                "187",
+                "StandUp"
+                "HBZ",
+                "Sido",
+                "EDM"
+              ]),
+            ),
+            BottomNavBar(3),
           ],
         ),
       ),

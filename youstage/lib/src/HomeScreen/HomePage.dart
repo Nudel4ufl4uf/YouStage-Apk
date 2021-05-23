@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:youstage/src/AppWideTools/Header.dart';
 
 import './Grid.dart';
-import 'BottomNavBar.dart';
-import 'HomeHeader.dart';
+import '../AppWideTools/BottomNavBar.dart';
+
 
 class HomePage extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Container(
         width: double.infinity,
         decoration: BoxDecoration(
@@ -22,7 +24,7 @@ class HomePage extends StatelessWidget {
             SizedBox(
               height: 25,
             ),
-            HomeHeader(),
+            Header("YouStage"),
             Expanded(
               child: Container(
                 child: Grid(),

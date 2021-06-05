@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 
 class InputField extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
         Container(
-            padding: EdgeInsets.all(10),
+            padding: EdgeInsets.only(left: 10,right: 10),
             decoration: BoxDecoration(
                 border: Border(bottom: BorderSide(color: Colors.grey[200]))),
             child: TextField(
